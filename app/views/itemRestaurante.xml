@@ -1,0 +1,23 @@
+<Alloy>
+	<Model src="restaurante" id="restaurante" instance="true"></Model>
+	<View class="Card RowContainer">
+		<View class="RowInfo">
+			<ImageView image="{$.restaurante.imagem}" class="Imagem"></ImageView>
+			<View class="ConteudoLayout">
+				<Label class="RowTitle" text="{$.restaurante.nome}"></Label>
+				<View class="IconInfo">
+					<ImageView class="RowIconInfo" image="/images/restaurante/tipo.png"></ImageView>
+					<Label class="RowTextInfo" text="{$.restaurante.tipo}"></Label>
+				</View>
+				<View class="IconInfo">
+					<ImageView class="RowIconInfo" image="/images/restaurante/horario.png"></ImageView>
+					<Label class="RowTextInfo" text="{$.restaurante.horarioFuncionamento}"></Label>
+				</View>
+				<View class="IconInfo">
+					<ImageView class="RowIconInfo" image="/images/restaurante/nota.png"></ImageView>
+					<Label class="RowTextInfo" text="{$.restaurante.nota}"></Label>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

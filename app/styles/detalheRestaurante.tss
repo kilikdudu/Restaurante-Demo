@@ -1,0 +1,16 @@
+
+"#win" : {
+  layout: "vertical"
+}
+
+"#descricao": {
+	color: "black",
+	left: 10,
+	right: 10,
+	top: 10,
+	bottom: 10,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 14
+	}
+}

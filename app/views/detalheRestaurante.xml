@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="win" title="Detalhes" >
+		<View height="Titanium.UI.SIZE" width="Titanium.UI.FILL" top="15">
+			<Require src="itemRestaurante" id="infoRestaurante"></Require>	
+		</View>
+		<Label id="descricao"></Label>
+		<Button onClick="reservar">Reservar</Button>
+	</Window>
+</Alloy>

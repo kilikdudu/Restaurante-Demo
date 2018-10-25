@@ -1,7 +1,13 @@
 <Alloy>
-	<NavigationWindow module="xp.ui">
-	    <Window class="container">
-	    		<Label  id="label" onClick="doClick">BIRL</Label>
+	<Collection src="restaurante" id="restaurantes" instance="true"></Collection>
+	<NavigationWindow module="xp.ui" id="navigation">
+	    <Window id="win" title="Restaurante Demo" >
+	    		<ActivityIndicator id="atividade" indicatorColor="red"  ></ActivityIndicator>
+	    		<TableView id="tabela" dataCollection="$.restaurantes" onClick="detalhar">
+	    			<TableViewRow index="{id}" >
+	    				<Require src="itemRestaurante" restaurante="{copia}"></Require>
+	    			</TableViewRow>
+	    		</TableView>
 	    </Window>
 	</NavigationWindow>
 </Alloy>

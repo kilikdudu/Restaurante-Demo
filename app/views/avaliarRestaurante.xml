@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="win" title="Avaliação">
+		<Label id="cabecalho"></Label>
+		<View width="90%" height="Titanium.UI.SIZE"> 
+			<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="horizontal" >
+				<ImageView id="star0" valor="1" class="Avaliacao" left="0"  onClick="marcarEstrela" />
+				<ImageView id="star1" valor="2" class="Avaliacao" onClick="marcarEstrela" />
+				<ImageView id="star2" valor="3" class="Avaliacao" onClick="marcarEstrela" />
+				<ImageView id="star3" valor="4" class="Avaliacao" onClick="marcarEstrela" />
+				<ImageView id="star4" valor="5" class="Avaliacao" onClick="marcarEstrela" />
+			</View>
+		</View>
+		<TextField id="comentario"></TextField>
+		<Button onClick="confirmar">Confirmar</Button>
+	</Window>
+</Alloy>

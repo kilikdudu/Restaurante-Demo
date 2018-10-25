@@ -1,0 +1,21 @@
+".Imagem": {
+	height: 80,
+	width: 80,
+	borderRadius: 4,
+	left: 0,
+	top: 5,
+	bottom: 5
+}
+".ConteudoLayout": {
+	layout: "vertical",
+	height: Titanium.UI.SIZE,
+	left: 85,
+	right: 0
+}
+
+".IconInfo": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	layout: "horizontal",
+	top: 2
+}

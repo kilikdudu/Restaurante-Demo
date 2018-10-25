@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="Theme.RestauranteDemo" parent="Theme.AppCompat.Light">
+		<item name="colorPrimary">#e41e2b</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="colorPrimaryDark">#640203</item>      
+		<item name="colorAccent">#880002</item>
+	</style>
+</resources>

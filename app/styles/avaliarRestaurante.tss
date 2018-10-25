@@ -1,0 +1,30 @@
+
+"#win" : {
+	layout: "vertical"
+}
+
+"#cabecalho": {
+	color: "black",
+	left: 10,
+	right: 10,
+	top: 10,
+	bottom: 10,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontSize: 14
+	}
+}
+
+".Avaliacao": {
+	image: "/images/avaliacaoDesmarcada.png", 
+	width: 42,
+	left: 5
+}
+
+"#comentario": {
+	left: 10,
+	right: 10,
+	hintText: "Comentário",
+	height: 50,
+	color: "black"
+}

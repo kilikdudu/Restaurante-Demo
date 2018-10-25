@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="container" class="card" onClick="avaliar">
+		<Label id="msgReserva"></Label>
+	</View>
+</Alloy>

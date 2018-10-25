@@ -1,0 +1,14 @@
+
+"#container" : {
+	backgroundColor: Alloy.Globals.MainColor,
+	height: 50,
+	width: Titanium.UI.FILL
+}
+"#msgReserva": {
+	color: "#fff",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: 16
+	},
+	width: "90%"
+}

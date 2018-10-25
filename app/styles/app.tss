@@ -1,26 +1,82 @@
-/*
-
-This is your global styles file. Selectors and rules you define
-here will be applied throughout your app. However, these rules
-have the lowest priority of any style settings.
-
-For more information, see the "Style Priorities" section of
-http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
-
-For example, the following would apply to all labels, windows,
-and text fields (depending on platform) in your app unless you
-overrode the settings with other TSS, XML, or JS settings:
-
-'Label[platform=android,windows]': {
-	color: '#000' // all platforms except Android and Windows default to black
+"Window": {
+	backgroundColor: "white",
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
 }
 
-'Window': {
-	backgroundColor: '#fff' // white background instead of default transparent or black
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
 }
 
-'TextField[platform=android]': {
-	height: Ti.UI.SIZE
+".Card[platform=android]": {
+	elevation: 18
+}
+".Card[platform=ios]": {
+	viewShadowColor:"#787878",
+	viewShadowOffset: 2
 }
 
-*/
+".RowContainer": {
+	left: 10,
+	right: 10,
+	top: 9,
+	bottom: 10,
+	height: Titanium.UI.SIZE,
+	backgroundColor: "white"
+}
+
+".RowInfo": {
+	left: 5,
+	right: 5,
+	height: Titanium.UI.SIZE
+}
+
+".RowTitle": {
+	color: "black",
+	font: {
+		fontSize: 15,
+		fontWeight: "bold"
+	},
+	height: Titanium.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL
+}
+
+".RowTextInfo": {
+	color: "darkgray",
+	font: {
+		fontSize: 13
+	},
+	height: Titanium.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Titanium.UI.FILL
+}
+
+".RowIconInfo": {
+	height: 17,
+	width: 17,
+	right: 3
+}
+
+"TableView": {
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	separatorColor: "transparent"
+}
+
+"TableViewRow": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL
+}
+
+"Button": {
+	left: 10,
+	right: 10,
+	height: 40,
+	borderRadius: 6,
+	backgroundColor: Alloy.Globals.MainColor,
+	color: "#fff"
+}
