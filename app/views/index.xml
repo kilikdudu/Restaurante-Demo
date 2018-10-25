@@ -1,0 +1,7 @@
+<Alloy>
+	<NavigationWindow module="xp.ui">
+	    <Window class="container">
+	    		<Label  id="label" onClick="doClick">BIRL</Label>
+	    </Window>
+	</NavigationWindow>
+</Alloy>
