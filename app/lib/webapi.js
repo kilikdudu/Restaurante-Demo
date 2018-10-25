@@ -5,6 +5,7 @@ exports.request = function(params, cb){
 
 	Ti.API.info("URL: " + params.url);
  	xhr.open(params.metodo, params.url);
+ 	xhr.setRequestHeader("Content-Type","application/json");
  	xhr.setRequestHeader("Authorization", 'Basic ' + Titanium.Utils.base64encode(Alloy.Globals.Constantes.API_KEY));
 
 	xhr.onload = function() {
@@ -12,12 +13,12 @@ exports.request = function(params, cb){
 		cb({
 			sucesso: true, 
 			mensagem: "",
-			retorno: JSON.parse(this.responseText)
+			retorno: this.responseText && JSON.parse(this.responseText)
 		});	
 	};
 	
 	xhr.onerror = function(e) {
-		Ti.API.info("Ocorreu um erro durante a solicitação, descrição: \n" + e.error);
+		Ti.API.info("Ocorreu um erro durante a solicitação, descrição: \n" + JSON.stringify(e));
 		if (Titanium.Network.networkType == Titanium.Network.NETWORK_NONE) {
 			var dialog = Ti.UI.createAlertDialog({
 				title : 'Atençao',

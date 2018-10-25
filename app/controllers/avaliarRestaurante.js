@@ -16,10 +16,16 @@ function marcarEstrela(e){
 }
 
 function confirmar(){
-	args.restaurante.avaliar(nota, $.comentario.getValue(), function(ret){
+	Alloy.createModel("avaliacao", {
+		nota: nota,
+		avaliacao: $.comentario.getValue(),
+		restauranteID: args.restaurante.get("id")
+	}).avaliar(function(ret){
 		if(ret.sucesso){
 			args.cb && args.cb();
 			args.navigation.closeWindow($.win);
+		} else {
+			alert(ret.mensagem);
 		}
 	});
 }

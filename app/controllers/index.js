@@ -27,11 +27,11 @@ function detalhar(e){
 }
 
 function refreshReserva(){
-	var mdRest = Alloy.createModel("restaurante");
+	var mdRest = Alloy.createModel("reserva");
 	mdRest.buscaRestauranteReserva(function(ret){
 		if(ret.sucesso){
 			var vwAlerta = Alloy.createController("alertaReserva", {
-				restaurante: mdRest, navigation: $.navigation, cb: function(){
+				restaurante: ret.restaurante, navigation: $.navigation, cb: function(){
 					$.win.remove(vwAlerta);
 				}}).getView();
 			animacaoReserva(vwAlerta);
