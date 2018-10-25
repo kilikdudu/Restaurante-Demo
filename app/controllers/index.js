@@ -10,6 +10,15 @@ $.win.addEventListener("open", function(e){
 	});
 });
 
+function refreshRestaurantes(e){
+	$.restaurantes.buscar(function(ret){
+		if(ret.sucesso){
+			$.refresh.endRefreshing();
+			refreshReserva();
+		}
+	});
+}
+
 function detalhar(e){
 	var mdRestaurante = $.restaurantes.where({id: e.row.index})[0];
 	var ctrlDetalhes = Alloy.createController("detalheRestaurante", {restaurante: mdRestaurante.toJSON(), 

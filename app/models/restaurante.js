@@ -3,11 +3,10 @@ exports.definition = {
 		columns: {
 			"id": "number",
 			"nome": "string",
-			"horaAbertura": "string",
-			"horaEncerramento": "string",
+			"horarioFuncionamento": "string",
 			"nota": "number",
 			"tipo": "string",
-			"imagem": "string",
+			"urlfoto": "string",
 			"descricao": "string"	
 		},
 		adapter: {
@@ -21,14 +20,11 @@ exports.definition = {
 			// extended functions and properties go here
 			transform: function(){
 				var md = this.toJSON();
-				var moment = require('moment');
-				var formatoHora = "HH:mm";
-				var formatoEntrada = "HH:mm:ss";
 				
-				md.horarioFuncionamento = 
-					"Das " + moment(md.horaAbertura, formatoEntrada).format(formatoHora) + 
-					" até " + moment(md.horaEncerramento, formatoEntrada).format(formatoHora);
+				md.horarioFuncionamento = "Das " + md.horarioFuncionamento; 
+				md.imagem = md.urlfoto;
 				md.nota = parseFloat(md.nota).toFixed(1);
+				
 				md.copia = md;
 				return md;
 			},
@@ -67,9 +63,11 @@ exports.definition = {
 			}
 			*/
 			buscar: function(cb){
-				this.reset();
 				
-				var colTemp = [];
+				var col = this;
+				col.reset();
+				
+				/*var colTemp = [];
 				colTemp.push({
 					id: 1,
 					nome: "Restaurante 01",
@@ -101,11 +99,22 @@ exports.definition = {
 					tipo: "Churrascaria",
 					imagem: "https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0RG000000ocj65MAA/59d241f2e4b0a48c96c8c2a7.jpg&w=620&h=400",
 					descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus cursus interdum. Vivamus nec efficitur ex. Integer commodo sapien sed mattis venenatis. Duis nibh metus, convallis ut imperdiet ac, maximus eu velit. Suspendisse potenti. Nullam tristique sagittis auctor. Aenean viverra condimentum varius. Maecenas elementum erat quis mi consectetur, at vehicula augue laoreet."
+				});*/
+				
+				var ws = require('webapi');
+				ws.request({
+					url: Alloy.Globals.Constantes.API_ENDPOINT + "restaurante",
+					metodo: "GET"
+				}, function(ret){
+					if(ret.sucesso){
+						col.add(ret.retorno.restaurantes, {silent: true});
+						col.trigger("change");
+						cb({sucesso: true, mensagem: ""});
+					} else {
+						cb(ret);
+					}
 				});
 				
-				this.add(colTemp, {silent: true});
-				this.trigger("change");
-				cb({sucesso: true, mensagem: ""});
 			}
 		});
 

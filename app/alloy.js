@@ -47,4 +47,5 @@ ACS.Users.login({
 })();
 
 Alloy.Globals.MainColor = "#e41e2b";
+Alloy.Globals.Constantes = require('constantes');
 
