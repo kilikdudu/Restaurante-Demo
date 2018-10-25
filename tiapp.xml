@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ti:app 
-  xmlns:ti="http://ti.appcelerator.org">
-  <id>br.com.foursys.palestrafiap</id>
-  <name>Restaurante Demo</name>
-  <version>1.0</version>
-  <publisher>carlos</publisher>
-  <url/>
-  <description>undefined</description>
-  <copyright>2018 by carlos</copyright>
-  <icon>appicon.png</icon>
-  <fullscreen>false</fullscreen>
-  <navbar-hidden>false</navbar-hidden>
-  <analytics>true</analytics>
-  <guid>4c8a3eac-e453-4e74-9999-e2a437805aae</guid>
-  <property name="ti.ui.defaultunit" type="string">dp</property>
-  <property name="run-on-main-thread" type="bool">true</property>
-  <ios>
-    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
-    <use-app-thinning>true</use-app-thinning>
-    <plist>
-      <dict>
-        <key>UISupportedInterfaceOrientations~iphone</key>
-        <array>
-          <string>UIInterfaceOrientationPortrait</string>
-        </array>
-        <key>UISupportedInterfaceOrientations~ipad</key>
-        <array>
-          <string>UIInterfaceOrientationPortrait</string>
-          <string>UIInterfaceOrientationPortraitUpsideDown</string>
-          <string>UIInterfaceOrientationLandscapeLeft</string>
-          <string>UIInterfaceOrientationLandscapeRight</string>
-        </array>
-        <key>UIRequiresPersistentWiFi</key>
-        <false/>
-        <key>UIPrerenderedIcon</key>
-        <false/>
-        <key>UIStatusBarHidden</key>
-        <false/>
-        <key>UIStatusBarStyle</key>
-        <string>UIStatusBarStyleDefault</string>
-      </dict>
-    </plist>
-  </ios>
-  <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:versionCode="10000000"
-            android:versionName="1.0.0" xmlns:android="http://schemas.android.com/apk/res/android">
-            <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
-            <application android:theme="@style/Theme.RestauranteDemo" />
-                
-            <uses-permission android:name="android.permission.INTERNET"/>
-        </manifest>
-    </android>
-    <modules>
-      <module platform="android">hyperloop</module>
-      <module platform="iphone">hyperloop</module>
-      <module platform="commonjs">ti.cloud</module>
-      <module platform="android">com.appcelerator.apm</module>
-      <module platform="iphone">com.appcelerator.apm</module>
-    </modules>
-    <deployment-targets>
-      <target device="android">true</target>
-      <target device="ipad">false</target>
-      <target device="iphone">true</target>
-    </deployment-targets>
-    <sdk-version>7.4.0.GA</sdk-version>
-    <plugins>
-      <plugin version="1.0">ti.alloy</plugin>
-    </plugins>
-    <property name="appc-app-id" type="string">5bd122de11415471d8afb7ca</property>
-    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
-    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-development" type="string">3YHMsWMHBcIP9BT5jDMPd3G1sMaYTX63</property>
-    <property name="acs-oauth-key-development" type="string">YOChUdoenkGUlzeePaHGyXzmzz4O4PnJ</property>
-    <property name="acs-api-key-development" type="string">9r5Vb2Fox5nDl3ATfjGvLQqhncUHuqvQ</property>
-    <property name="acs-username-development" type="string">appc_app_user_dev</property>
-    <property name="acs-password-development" type="string">CHmyKfhHF7e8YnxQrC</property>
-    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
-    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-production" type="string">51PzEBITy7AsKrXEYMuVkghJ8x4TXR1B</property>
-    <property name="acs-oauth-key-production" type="string">mFD40vcBwyMaxmqAehl0B13oo3mYs7vS</property>
-    <property name="acs-api-key-production" type="string">IUvUIQoE5OgIMrJwbyw0u7OuRdkbBp0u</property>
-    <property name="acs-username-production" type="string">appc_app_user</property>
-    <property name="acs-password-production" type="string">SmfRBQlrniUQ8OpJU0</property>
-    <property name="appc-org-id" type="string">100128267</property>
-    <property name="appc-creator-user-id" type="string">653dfe7c-ac00-4c46-ac37-3fe76baa1909</property>
-    <property name="com-appcelerator-apm-id" type="string">d4be2a90d690432f8657be9390f342bd00555300</property>
-  </ti:app>
+<ti:app
+xmlns:ti="http://ti.appcelerator.org">
+	<id>br.com.foursys.palestrafiap</id>
+	<name>Restaurante Demo</name>
+	<version>1.0</version>
+	<publisher>carlos</publisher>
+	<url/>
+	<description>undefined</description>
+	<copyright>2018 by carlos</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<analytics>true</analytics>
+	<guid>b3daa94d-18b6-45f4-9888-57cd6b8e4d97</guid>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<property name="run-on-main-thread" type="bool">true</property>
+	<ios>
+		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+		<use-app-thinning>true</use-app-thinning>
+		<plist>
+			<dict>
+				<key>UISupportedInterfaceOrientations~iphone</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+				</array>
+				<key>UISupportedInterfaceOrientations~ipad</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UIRequiresPersistentWiFi</key>
+				<false/>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+				<key>UIStatusBarHidden</key>
+				<false/>
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleDefault</string>
+			</dict>
+		</plist>
+	</ios>
+	<android
+	xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest android:versionCode="10000000" android:versionName="1.0.0"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+			<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
+			<application android:theme="@style/Theme.RestauranteDemo"/>
+			<uses-permission android:name="android.permission.INTERNET"/>
+		</manifest>
+	</android>
+	<modules>
+		<module platform="android">hyperloop</module>
+		<module platform="iphone">hyperloop</module>
+		<module platform="commonjs">ti.cloud</module>
+		<module platform="android">com.appcelerator.apm</module>
+		<module platform="iphone">com.appcelerator.apm</module>
+	</modules>
+	<deployment-targets>
+		<target device="android">true</target>
+		<target device="ipad">false</target>
+		<target device="iphone">true</target>
+	</deployment-targets>
+	<sdk-version>7.4.0.GA</sdk-version>
+	<plugins>
+		<plugin version="1.0">ti.alloy</plugin>
+	</plugins>
+	<property name="appc-app-id" type="string">5bd20bc31c770271e02af671</property>
+	<property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+	<property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+	<property name="acs-oauth-secret-development" type="string">3YHMsWMHBcIP9BT5jDMPd3G1sMaYTX63</property>
+	<property name="acs-oauth-key-development" type="string">YOChUdoenkGUlzeePaHGyXzmzz4O4PnJ</property>
+	<property name="acs-api-key-development" type="string">9r5Vb2Fox5nDl3ATfjGvLQqhncUHuqvQ</property>
+	<property name="acs-username-development" type="string">appc_app_user_dev</property>
+	<property name="acs-password-development" type="string">CHmyKfhHF7e8YnxQrC</property>
+	<property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+	<property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+	<property name="acs-oauth-secret-production" type="string">51PzEBITy7AsKrXEYMuVkghJ8x4TXR1B</property>
+	<property name="acs-oauth-key-production" type="string">mFD40vcBwyMaxmqAehl0B13oo3mYs7vS</property>
+	<property name="acs-api-key-production" type="string">IUvUIQoE5OgIMrJwbyw0u7OuRdkbBp0u</property>
+	<property name="acs-username-production" type="string">appc_app_user</property>
+	<property name="acs-password-production" type="string">SmfRBQlrniUQ8OpJU0</property>
+	<property name="appc-org-id" type="string">100128267</property>
+	<property name="appc-creator-user-id" type="string">653dfe7c-ac00-4c46-ac37-3fe76baa1909</property>
+	<property name="com-appcelerator-apm-id" type="string">d4be2a90d690432f8657be9390f342bd00555300</property>
+</ti:app>
